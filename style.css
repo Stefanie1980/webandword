@@ -291,7 +291,7 @@ margin-top: -30px;
 /* Floating image on the left */
 .about-photo {
   float: left;
-  width: 300px;
+  width: 270px;
   height: auto;
   margin-right: 2rem;
   margin-bottom: 1rem;
@@ -303,7 +303,7 @@ margin-top: -30px;
 }
 
 .about-content p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.7;
   text-align: justify;
   color: #444;
