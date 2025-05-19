@@ -26,7 +26,7 @@
   }
   
   p {
-    font-size: 1.25rem; /* 18px */
+    font-size: 1.5rem; /* 18px */
   }
   
 
@@ -70,11 +70,16 @@ body {
   .nav-inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;  /* Center all items horizontally */
+    max-width: 1200px;
+    margin: 0 auto;           /* Center the .nav-inner container itself */
+    width: 100%;
+    gap: 50px;                /* Optional: space between items */
   }
   
+  
   .logo img {
-    height: 110px;
+    height: 135px;
     display: block;
   }
   
@@ -241,6 +246,7 @@ body {
   top: -1px;                /* Slightly above the line */
   left: 0;
   right: 0;
+  width: 100%
   height: 2px;              /* Sets the inner line height */
   background: #fff;         /* Creates a white inner line for contrast */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a glowing effect */
@@ -251,13 +257,14 @@ body {
   
  /* ABOUT SECTION */
 
- #about h2 {
+#about h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
   color: #222;
   text-align: center;
 }
- #about {
+
+#about {
   padding: 4rem 0;
   background-color: #fff;
   scroll-margin-top: 120px;
@@ -275,7 +282,7 @@ body {
   padding: 2rem;
   max-width: 1200px;
   width: 100%;
-margin-top: -30px;
+  margin-top: -30px;
 }
 
 .about-card h3 {
@@ -285,70 +292,65 @@ margin-top: -30px;
 }
 
 .about-content {
-  position: relative;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap; /* Optional: wrap on smaller screens */
 }
 
-/* Floating image on the left */
 .about-photo {
-  float: left;
-  width: 250px;
+  width: 330px;
   height: auto;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
   object-fit: cover;
   border-radius: 90%;
- 
   background-color: #fff;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
 }
 
-.about-content p {
-  font-size: 1rem;
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  font-size: 1.5rem;
   line-height: 1.7;
   text-align: justify;
   color: #444;
   font-family: 'Inter', sans-serif;
 }
 
-/* Buttons under the text */
+/* Linkedin Button */
 .button-container {
-  margin-top: 2rem;
-  text-align: left;
-
+  margin-top: 3rem;
+  text-align: center;
+  align-items: center;
 }
 
-.about-button {
-  padding: 0.5rem 1.5rem;
-  background-color: #f4837c;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
+.linkedin-image-button {
+  display: inline-block;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
-  font-size: 1.5rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  margin-right: 2rem
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-.about-button:hover {
-  background-color: #444;
+.linkedin-image-button:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* LinkedIn button */
-.linkedin-button {
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  background: #d6e9ef;
-  color: #1a1a1a;
-  font-weight: 600;
-  transition: all 0.3s ease;
+
+.linkedin-img {
+  display: block;
+  max-width: 250px;
+  height: auto;
 }
 
-.linkedin-button:hover {
-  background: #b9dbe5;
-  color: #000;
-}
+
+
 
   
  
@@ -373,6 +375,7 @@ margin-top: -30px;
     color: #555;
     text-align: left;
     max-width: 1200px;
+    margin-bottom: 4rem;
    
     line-height: 1.6;
   }
@@ -424,13 +427,15 @@ margin-top: -30px;
   
   .service-card p {
     text-align: justify;
-    text-justify: inter-word;
     hyphens: auto;
     word-break: break-word;
     line-height: 1.6;
     font-variant-ligatures: common-ligatures;
-    font-size: 1.5rem
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;      /* Slightly increase letter spacing */
+    font-kerning: normal;        /* Ensures kerning is enabled */
   }
+  
   
   
 
@@ -463,6 +468,7 @@ margin-top: -30px;
   color: #555;
   text-align: left;
   max-width: 1200px;
+  margin-bottom: 4rem;
  
   line-height: 1.6;
 }
@@ -538,7 +544,7 @@ margin-top: -30px;
   text-decoration: none;
   border-radius: 8px;
   transition: background-color 0.3s ease;
-  font-size: 1rem;
+  font-size: 1.5rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Added depth */
 }
 
@@ -690,7 +696,7 @@ margin-top: -30px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: background-color 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Added depth */
 }
@@ -771,7 +777,7 @@ footer {
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition: background-color 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Added depth */
 }
