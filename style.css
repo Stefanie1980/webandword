@@ -972,17 +972,14 @@ footer {
     animation: subtitleSlide 1s ease-out 2.2s forwards;
   }
 
-  #about {
-    padding: 2rem 1rem;
-  }
-
+ 
   .about-container {
     flex-direction: column;
     align-items: center;
   }
 
   .about-card {
-    padding: 1.5rem;
+   
     margin-top: 0;
   }
 
