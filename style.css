@@ -624,32 +624,29 @@ nav {
   
   }
 
-  #confirmation-message {
-    display: none;             /* hidden by default */
+  .confirmation-message {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
     font-size: 1.8rem;
     font-weight: 600;
     margin-top: 1em;
     padding: 1em 1.5em;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.3);  /* soft green shadow */
-    color: #155724;            /* dark green text */
-    background-color: #d4edda; /* light green background */
-    border: 2px solid #28a745; /* green border */
     text-align: center;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    pointer-events: none;      /* ignore clicks when hidden */
+    pointer-events: none;
   }
   
-  /* When showing the message, add a class to fade it in */
-  #confirmation-message.visible {
-    display: block;
+  .confirmation-message.visible {
+    visibility: visible;
     opacity: 1;
+    transition-delay: 0s;
     pointer-events: auto;
   }
   
+  
   /* Error styling */
-  #confirmation-message.error {
+  .confirmation-message.error {
     color: #721c24;             /* dark red text */
     background-color: #f8d7da;  /* light red background */
     border-color: #f5c6cb;      /* red border */
