@@ -998,7 +998,7 @@ footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
 
  .about-card {
@@ -1043,6 +1043,7 @@ footer {
     font-size: 1rem;
     text-align: justify;
     margin-bottom: 2rem;
+    back
   }
 
   #services h3 {
