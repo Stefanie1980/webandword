@@ -421,7 +421,7 @@ nav {
   
   
   .service-card p {
-    text-align: justify;
+    text-align: left;
     hyphens: auto;
     word-break: break-word;
     line-height: 1.6;
@@ -440,10 +440,16 @@ nav {
     margin-bottom: 0.75rem;
     color: #333;
   }
+
+  service-buttons {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
   
   
   /* PORTFOLIO & CONTACT HEADINGS */
-  #portfolio{
+  #portfolio {
     padding: 4rem 0;
     text-align: center;
     scroll-margin-top: 120px;
@@ -525,7 +531,7 @@ nav {
   font-size: 1.5rem;
   color: #444;
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
 }
 
@@ -942,7 +948,8 @@ footer {
 
   /* Adjust hero title font size on smaller screens */
   .hero-title {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
+    font-weight: 700;
   }
 
   /* Animate hero title's span elements for mobile */
@@ -952,7 +959,7 @@ footer {
 
   .hero-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #666;
     max-width: 700px;
