@@ -973,9 +973,31 @@ footer {
   }
 
  
+  #about {
+    padding: 1.5rem 1rem; /* slightly smaller padding on mobile */
+    overflow-x: hidden; /* prevent horizontal scroll */
+  }
+
   .about-container {
+    width: 100%;
+    max-width: 100vw; /* prevent overflow */
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem; /* add some side padding */
+  }
+
+  .about-photo {
+    width: 100%; /* make image scale to container */
+    max-width: 200px; /* keep max size */
+    height: auto; /* keep aspect ratio */
+  }
+
+  .about-text p {
+    max-width: 100%;
+    font-size: 1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   .about-card {
@@ -993,28 +1015,13 @@ footer {
     align-items: center;
   }
 
-  .about-photo {
-    width: 200px; /* Downsized image */
-  }
+  
 
   .about-text {
     text-align: center;
   }
 
-  .about-text p {
-    overflow-wrap: break-word; /* break long words */
-    word-wrap: break-word;
-    hyphens: auto; /* hyphenation */
-    max-width: 100%; /* don't overflow container */
-    white-space: normal; /* ensure text wraps */
-    box-sizing: border-box;
-    font-size: 1rem;
-  }
-
-  .button-container {
-    margin-top: 2rem;
-    text-align: center;
-  }
+  
 
   .linkedin-img {
     max-width: 180px; /* Downsized for mobile */
