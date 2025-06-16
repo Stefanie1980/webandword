@@ -948,8 +948,8 @@ footer {
 
   /* Adjust hero title font size on smaller screens */
   .hero-title {
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font
   }
 
   /* Animate hero title's span elements for mobile */
@@ -959,7 +959,7 @@ footer {
 
   .hero-subtitle {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     color: #666;
     max-width: 700px;
