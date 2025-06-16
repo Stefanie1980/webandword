@@ -998,12 +998,18 @@ footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
+    padding-right: 1rem;
   }
 
-  .about-card {
-   
-    margin-top: 0;
-  }
+ .about-card {
+  width: 100%;           /* full width on small screens */
+  max-width: 100%;       /* prevent overflow */
+  padding: 1,5rem; /* some padding inside the card */
+  box-sizing: border-box; /* include padding in width */
+  overflow-wrap: break-word; /* break long words */
+  word-wrap: break-word;
+  hyphens: auto;           /* optional, for hyphenation */
+}
 
   .about-card h3 {
     font-size: 2rem;
@@ -1017,10 +1023,7 @@ footer {
 
   
 
-  .about-text {
-    text-align: center;
-  }
-
+ 
   
 
   .linkedin-img {
