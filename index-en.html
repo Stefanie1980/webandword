@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Web & Word by Stefanie</title>
    <!-- Load Manrope font from Google Fonts -->
@@ -14,12 +14,21 @@
 
  <!-- NAVBAR -->
 <nav>
-  <div class="nav-inner">
+  <div class="nav-inner wrapper">
+
     <!-- Logo -->
     <div class="logo">
       <img src="images/Logo-removebg.png" alt="Web & Word by Stefanie">
     </div>
 
+    <!-- Hamburger menu (hidden on desktop) -->
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Links (hidden by default on mobile) -->
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
@@ -28,8 +37,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <!-- Language Switch -->
-    <div class="language-switch">
+    <!-- Language Switch (hidden on mobile) -->
+    <div class="language-switch" id="language-switch">
       <a href="index-en.html" title="English">
         <img src="images/gb.png" alt="English">
       </a>
@@ -37,8 +46,11 @@
         <img src="images/de.png" alt="Deutsch">
       </a>
     </div>
+
   </div>
 </nav>
+
+
 
 
   <header class="hero-header">

@@ -2,6 +2,7 @@
 <html lang="de">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Web & Word by Stefanie</title>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
@@ -10,17 +11,25 @@
 </head>
 <body>
 
+
   <!-- NAVBAR -->
   <nav>
     <div class="wrapper">
       <div class="nav-inner">
+        
         <!-- Logo -->
         <div class="logo">
           <img src="images/Logo-removebg.png" alt="Web & Word by Stefanie">
         </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      
 
         <ul class="nav-links">
-          <li><a href="#about">Über mich</a></li>
+          <li><a href="#about">Über</a></li>
           <li><a href="#services">Leistungen</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#books">Bücher</a></li>
@@ -57,15 +66,23 @@
   
 
    <!-- ABOUT SECTION -->
-<section id="about">
+   <section id="about">
  
-  <div class="wrapper about-container">
-    <div class="about-card">
-
-    
-
-      <div class="about-content">
-        <img src="images/me again.jpg" alt="Stefanie Röfke" class="about-photo" />
+    <div class="wrapper about-container">
+      <div class="about-card">
+  
+      
+  
+        <div class="about-content">
+          <div class="about-image-wrapper">
+          <img src="images/me again.jpg" alt="About Photo" class="about-photo" />
+          <div class="button-container">
+            <a href="https://www.linkedin.com/in/stefanie-rofke/" class="linkedin-image-button" target="_blank" rel="noopener noreferrer">
+              <img src="images/Linkedin button.jpg" alt="Find me on LinkedIn" class="linkedin-img" />
+            </a>
+          </div>
+        </div>
+          <div class="about-text">
 
         <p>
             Schön, dass Sie da sind – bei Web & Word by Stefanie, wo Gestaltung berührt und Sprache verbindet.
@@ -82,11 +99,7 @@
     
       
 
-        </div>
-        <div class="button-container">
-          <a href="#services" class="about-button">Mein Angebot entdecken</a>
-          <a href="https://www.linkedin.com/in/stefanie-rofke/" target="_blank" class="about-button linkedin-button">Finde mich auf LinkedIn</a>
-        </div>
+        
   
       </div>
     </div>
@@ -98,6 +111,7 @@
     <div class="wrapper">
       <h2>Meine Leistungen</h2>
       <div class="services-grid">
+        
 
         <div class="service-card">
           <h3>Responsives Webdesign</h3>
@@ -105,6 +119,9 @@
           <p>
             Ich entwickle moderne, responsive Websites, die auf allen Geräten überzeugen – visuell ansprechend, benutzerfreundlich und technisch sauber umgesetzt. UX- und UI-Design fließen in klare Strukturen, intuitive Navigation und ein stimmiges Gesamtbild ein. Je nach Projekt arbeite ich mit WordPress oder individuellem Code (HTML, CSS, JS). SEO-Basics, schnelle Ladezeiten, Barrierefreiheit und einfache Pflege sind dabei selbstverständlich – ebenso wie ein Design, das Ihre Inhalte stärkt, Ihre Werte transportiert und Ihre Botschaft verständlich und wirkungsvoll vermittelt.
           </p>
+          <div class="service-buttons">
+            <button class="contact-button" onclick="location.href='#contact'">Angebot einholen</button>
+          </div>
         </div>
 
         <div class="service-card">
@@ -113,6 +130,9 @@
           <p>
             Ich schreibe und bearbeite Texte, die präzise sagen, was gemeint ist – klar, lebendig und auf den Punkt. Ob Webtexte, Blogartikel, Produktbeschreibungen oder redaktionelle Inhalte: Ich finde den richtigen Ton für Ihr Anliegen und Ihre Zielgruppe – auf Deutsch und Englisch. Neben der Texterstellung biete ich Lektorat und Korrektorat, um Inhalte sprachlich zu schärfen, stilistisch zu verfeinern und strukturell zu stärken. Ich bringe Gedanken in Form – so, dass sie nicht nur gelesen, sondern erinnert werden. Das Resultat: Texte mit Tiefe, die nachhallen und im Kopf bleiben.
           </p>
+          <div class="service-buttons">
+            <button class="contact-button" onclick="location.href='#contact'">Angebot einholen</button>
+          </div>
         </div>
 
         <div class="service-card">
@@ -121,6 +141,9 @@
           <p>
             Ich übersetze aus dem Englischen ins Deutsche – präzise, stilsicher und mit Feingefühl für Tonalität und Kontext. Ob Website, Marketingtext, Editorial oder Sachbuch: Ich finde nicht nur die passenden Worte, sondern auch den richtigen Klang. Dabei steht nicht die wörtliche Übertragung im Vordergrund, sondern eine Sprache, die im Deutschen ebenso lebendig und natürlich wirkt wie das Original. Kultur- und zielgruppensensible Umsetzung ist dabei ebenso wichtig wie sprachliche Klarheit, Ausdrucksstärke und ein Stil, der wirklich passt und vor allem natürlich klingt.
           </p>
+          <div class="service-buttons">
+            <button class="contact-button" onclick="location.href='#contact'">Angebot einholen</button>
+          </div>
         </div>
       </div>
     </div>
@@ -131,7 +154,7 @@
     <div class="wrapper">
       <h2>Portfolio</h2>
       <p class="portfolio-intro">
-        Hier sind zwei Websites, die ich kürzlich gestaltet und textlich betreut habe. Beide verbinden klares Design mit durchdachter Sprache – individuell auf die Bedürfnisse der Kund:innen abgestimmt.
+        Hier sind zwei Beispiele von Webseiten, die ich kürzlich gestaltet und textlich betreut habe. Beide verbinden klares Design mit durchdachter Sprache – individuell auf die Bedürfnisse der Kund/innen abgestimmt.
       </p>
 
       <div class="portfolio-card two-column-card">
@@ -170,7 +193,7 @@
           <img src="images/Pennine Way.jpg" alt="Kopflos auf dem Pennine Way Buchcover">
           <h3>Kopflos auf dem Pennine Way<br>- Eine Berlinerin in der englischen Wildnis</h3>
           <p>
-            Eine humorvolle Reiseerzählung über eine Solo-Wanderung durch Nordengland – ein Weg voller Matsch, Einsamkeit und leiser Reflexion.
+            Eine humorvolle Reiseerzählung über eine Solo-Wanderung auf dem Pennine Way durch den Norden Englands – ein Pfad geprägt von Matsch, Einsamkeit und stiller Selbstreflexion.
           </p>
           <a href="https://www.amazon.co.uk/Kopflos-auf-dem-Pennine-Way/dp/3743928035" target="_blank" class="book-button">Mehr erfahren</a>
         </div>
